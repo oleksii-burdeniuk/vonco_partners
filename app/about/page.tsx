@@ -21,15 +21,15 @@ export default function AboutUs() {
             At **Vonco.partners**, our story began over **5 years ago** with a
             simple mission: to empower talented drivers and connect them with
             exceptional opportunities in the ever-evolving world of
-            ride-sharing. We saw a need for a partner who wasn't just a service
-            provider but a genuine advocate for their drivers' success.
+            ride-sharing. We saw a need for a partner who was not just a service
+            provider but a genuine advocate for their drivers success.
           </p>
           <p>
             From our headquarters in **Katowice, Poland**, we have built a team
-            with deep industry knowledge and a passion for people. We've helped
-            hundreds of drivers like you achieve financial independence,
+            with deep industry knowledge and a passion for people. We have
+            helped hundreds of drivers like you achieve financial independence,
             flexibility, and professional growth. We understand the challenges
-            and triumphs of life on the road, and we're here to make every
+            and triumphs of life on the road, and we are here to make every
             journey a smooth one.
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function AboutUs() {
             <p>
               When you join Vonco.partners, you become part of a supportive
               community. Our 24/7 multilingual support team is always on standby
-              to assist you, ensuring you're never alone.
+              to assist you, ensuring you are never alone.
             </p>
           </div>
         </div>

@@ -11,7 +11,9 @@ export default function DriverForm() {
     consent: false,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: {
+    target: { name: string; value?: string; type?: string; checked?: boolean };
+  }) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -19,7 +21,7 @@ export default function DriverForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     const { email, city, name, phoneNumber } = formData;
     const body = `
 Hi! I would like to join your flat partner and became a taxi driver! There is my data to get in touch with me:

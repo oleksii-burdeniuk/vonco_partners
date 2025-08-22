@@ -39,8 +39,8 @@ export default function WorkWithUs() {
           <p>
             Take control of your work-life balance. We offer a completely
             flexible schedule, allowing you to work when and where you want.
-            Whether you're looking for a full-time career or a part-time side
-            hustle, our platform puts you in the driver's seat of your own
+            Whether you are looking for a full-time career or a part-time side
+            hustle, our platform puts you in the driver s seat of your own
             success.
           </p>
 
