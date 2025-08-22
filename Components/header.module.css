@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  padding: 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  /* Logo text styling */
+  font-family: 'Georgia', serif; /* A classic, professional font */
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fffefe; /* Dark gray for good contrast */
+  text-transform: uppercase; /* All caps for a strong, corporate look */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  margin: 0; /* Remove default margin from h3 */
+  font-size: 30px;
+}
+.logo:hover {
+  color: #ff4500;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.navBtn {
+}

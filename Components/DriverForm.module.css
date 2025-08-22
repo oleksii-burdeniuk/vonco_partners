@@ -1,0 +1,112 @@
+/* UberDriverForm.module.css */
+
+.container {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.inputField::placeholder {
+  color: #888;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.consentContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.checkbox:checked {
+  background-color: #fff;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+.consentText {
+  font-size: 0.85rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.submitButton {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #fff;
+  color: #000;
+}
