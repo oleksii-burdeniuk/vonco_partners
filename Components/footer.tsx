@@ -1,5 +1,5 @@
 // components/Footer.jsx
-import styles from './footer.module.css';
+import styles from './Footer.module.css';
 import { FaPhone, FaEnvelope, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {

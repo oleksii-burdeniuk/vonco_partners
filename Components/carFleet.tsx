@@ -1,6 +1,6 @@
 // components/CarFleet.jsx
 import Image from 'next/image';
-import styles from './carFleet.module.css';
+import styles from './CarFleet.module.css';
 
 const cars = [
   {

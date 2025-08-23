@@ -1,4 +1,4 @@
-import styles from './workWithUs.module.css';
+import styles from './WorkWithUs.module.css';
 
 export default function WorkWithUs() {
   return (

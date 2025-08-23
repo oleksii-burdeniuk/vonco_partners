@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './howToStart.module.css';
+import styles from './HowToStart.module.css';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const steps = [

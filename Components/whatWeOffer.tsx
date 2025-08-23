@@ -1,4 +1,4 @@
-import styles from './whatWeOffer.module.css';
+import styles from './WhatWeOffer.module.css';
 
 export default function WhatWeOffer() {
   const offerings = [
