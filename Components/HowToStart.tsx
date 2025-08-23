@@ -46,9 +46,9 @@ const steps = [
 ];
 
 export default function HowToStart() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleToggle = (index) => {
+  const handleToggle = (index: number | null) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
