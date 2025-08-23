@@ -2,6 +2,10 @@ import Image from 'next/image';
 import styles from './page.module.css';
 
 import DriverForm from '@/Components/driverForm';
+import WhyUs from '@/Components/whyUs';
+import WhatWeOffer from '@/Components/whatWeOffer';
+import CarFleet from '@/Components/carFleet';
+import HowToStart from '@/Components/HowToStart';
 
 export default function Home() {
   return (
@@ -16,6 +20,18 @@ export default function Home() {
             className={styles.logoImage}
           />
           <DriverForm />
+        </div>
+        <div>
+          <WhyUs />
+        </div>
+        <div>
+          <WhatWeOffer />
+        </div>
+        <div>
+          <CarFleet />
+        </div>
+        <div>
+          <HowToStart />
         </div>
       </main>
     </div>

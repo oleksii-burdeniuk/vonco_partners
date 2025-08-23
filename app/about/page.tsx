@@ -1,5 +1,5 @@
 // components/AboutUs.jsx
-import styles from './AboutUs.module.css';
+import styles from './aboutUs.module.css';
 
 export default function AboutUs() {
   return (

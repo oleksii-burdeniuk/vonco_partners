@@ -171,3 +171,8 @@ a.secondary {
 .logoImage {
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  .formContainer {
+    flex-direction: column;
+  }
+}
