@@ -11,7 +11,7 @@ import {
   FaTachometerAlt,
 } from 'react-icons/fa';
 
-export default function CarDetail({ params }: { params: { carId: string } }) {
+export default function CarDetail({ params }) {
   const { carId } = params;
   const car = cars.find((c) => c.slug === carId);
 
