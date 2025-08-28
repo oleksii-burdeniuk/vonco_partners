@@ -10,11 +10,11 @@ import {
   FaLuggageCart,
   FaTachometerAlt,
 } from 'react-icons/fa';
-interface CarDetailProps {
+type CarDetailProps = {
   params: {
     carId: string;
   };
-}
+};
 
 export default function CarDetail({ params }: CarDetailProps) {
   const { carId } = params;
