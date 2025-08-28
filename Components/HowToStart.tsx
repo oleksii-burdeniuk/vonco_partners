@@ -6,38 +6,65 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const steps = [
   {
-    title: 'ВАЖНАЯ ИНФОРМАЦИЯ:',
+    title: 'IMPORTANT INFORMATION:',
     content: (
       <ul>
         <li>
-          1. Чтобы упростить вам начало работы, мы разделили инструкции на
-          пункты.
+          1. To simplify your start, we have divided the instructions into clear
+          steps.
         </li>
-        <li>2. Легализируйте свое дальнейшее пребывание.</li>
-        <li>3. Действуйте быстро.</li>
-        <li>4. Перед тем как начать, заполните...</li>
+        <li>2. Legalize your stay and work in Poland to avoid issues.</li>
+        <li>
+          3. Act quickly. Timeliness in submitting documents speeds up the
+          process.
+        </li>
+        <li>
+          4. Before you start, fill out the application form on our website to
+          begin your registration.
+        </li>
       </ul>
     ),
   },
   {
-    title: 'Подготовка документов водителя',
-    content: 'Содержание для этого пункта...',
+    title: 'DRIVER DOCUMENT PREPARATION',
+    content: (
+      <p>
+        Please prepare the following documents: a valid driver’s license, a
+        passport or ID card, and any necessary permits for working in Poland.
+        Our specialists will help you with all the paperwork to legalize your
+        employment.
+      </p>
+    ),
   },
   {
-    title: 'Подготовка телефона',
-    content: 'Содержание для этого пункта...',
+    title: 'PHONE SETUP',
+    content: (
+      <p>
+        To start accepting orders, you need a smartphone with the Uber, Bolt,
+        and FreeNow apps installed. Our team will help you configure the
+        applications correctly and set up your driver profile.
+      </p>
+    ),
   },
   {
-    title: 'Встреча в офисе Vonco Partner',
-    content: 'Содержание для этого пункта...',
-  },
-  {
-    title: 'Запуск процедуры на сайте Vonco Partner',
-    content: 'Содержание для этого пункта...',
+    title: 'MEETING AT VONCO PARTNERS OFFICE',
+    content: (
+      <p>
+        After your online registration, you will be invited for a short meeting
+        at our office. During the meeting, you will sign a transparent contract
+        and get answers to all your questions.
+      </p>
+    ),
   },
   {
     title: 'START',
-    content: 'Содержание для этого пункта...',
+    content: (
+      <p>
+        Congratulations! After completing all the above steps, you are ready to
+        start working as a driver with Vonco Partners. You can now log into the
+        apps and begin earning money with a flexible schedule.
+      </p>
+    ),
   },
 ];
 

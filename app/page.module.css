@@ -31,6 +31,11 @@
   justify-content: space-between;
   padding-top: 80px;
 }
+@media (max-width: 600px) {
+  .main {
+    padding-top: 10px;
+  }
+}
 
 .main ol {
   font-family: var(--font-geist-mono);
@@ -168,8 +173,20 @@ a.secondary {
   width: 100%;
   gap: 90px;
 }
+@media (max-width: 600px) {
+  .formContainer {
+    gap: 20px;
+  }
+}
+
 .logoImage {
   border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .logoImage {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media (max-width: 600px) {
   .formContainer {

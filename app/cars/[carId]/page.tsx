@@ -10,13 +10,12 @@ import {
   FaLuggageCart,
   FaTachometerAlt,
 } from 'react-icons/fa';
-type CarDetailProps = {
-  params: {
-    carId: string;
-  };
+
+type CarDetailPageProps = {
+  params: { carId: string };
 };
 
-export default function CarDetail({ params }: CarDetailProps) {
+export default function CarDetail({ params }: CarDetailPageProps) {
   const { carId } = params;
   const car = cars.find((c) => c.slug === carId);
 
@@ -43,10 +42,11 @@ export default function CarDetail({ params }: CarDetailProps) {
           <div className={styles.imageWrapper}>
             <Image
               src={car.image}
-              alt={`${car.name}`}
+              alt={car.name}
               width={800}
               height={500}
               className={styles.mainImage}
+              priority
             />
           </div>
         </div>
@@ -107,4 +107,11 @@ export default function CarDetail({ params }: CarDetailProps) {
       </div>
     </section>
   );
+}
+
+// ✅ Next.js will generate static pages for each car
+export function generateStaticParams() {
+  return cars.map((car) => ({
+    carId: car.slug,
+  }));
 }
