@@ -6,8 +6,11 @@ import WhyUs from '@/Components/whyUs';
 import WhatWeOffer from '@/Components/whatWeOffer';
 import CarFleet from '@/Components/carFleet';
 import HowToStart from '@/Components/HowToStart';
+import { getMeals } from '@/lib/cars';
 
-export default function Home() {
+export default async function Home() {
+  const meals = await getMeals();
+  console.log('meals', meals);
   return (
     <div className={styles.page}>
       <main className={styles.main}>

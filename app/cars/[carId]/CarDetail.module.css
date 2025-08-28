@@ -1,0 +1,125 @@
+/* components/CarDetail.module.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  padding: 50px 20px;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.carName {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+  margin-bottom: 5px;
+}
+
+.carYear {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.notFoundTitle {
+  font-size: 2.5rem;
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.notFoundText {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.imageWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.detailsGroup {
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.1);
+}
+
+.detailsTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.specList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specList li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.icon {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+.rentPrice,
+.purchasePrice,
+.categories {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}

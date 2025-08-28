@@ -1,22 +1,57 @@
+'use client';
+import { usePathname } from 'next/navigation';
 import styles from './Header.module.css';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import NavLink from './ClientComponents/NavLink';
 
 export default function Header() {
+  const pathName = usePathname();
+  useEffect(() => {
+    console.log('pathName', pathName);
+  }, [pathName]);
+
   return (
     <header className={styles.header}>
-      <Link href='./'>
+      <NavLink
+        href='./'
+        activeStyle={styles.active}
+        unActiveStyle={styles.unActive}
+      >
         <h3 className={styles.logo}>Vonco Partners</h3>
-      </Link>
+      </NavLink>
       <nav className={styles.nav}>
-        <Link href='./work'>
+        <NavLink
+          href='/work'
+          activeStyle={styles.active}
+          unActiveStyle={styles.unActive}
+        >
           <h3 className={styles.navBtn}>Work with us</h3>
-        </Link>
-        <Link href='./about'>
+        </NavLink>
+
+        <NavLink
+          href='/about'
+          activeStyle={styles.active}
+          unActiveStyle={styles.unActive}
+        >
           <h3 className={styles.navBtn}>About us</h3>
-        </Link>
-        <Link href='./contacts'>
+        </NavLink>
+
+        <NavLink
+          href='/cars'
+          activeStyle={styles.active}
+          unActiveStyle={styles.unActive}
+        >
+          <h3 className={styles.navBtn}>Our cars</h3>
+        </NavLink>
+
+        <NavLink
+          href='/contacts'
+          activeStyle={styles.active}
+          unActiveStyle={styles.unActive}
+        >
           <h3 className={styles.navBtn}>Contacts</h3>
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );
